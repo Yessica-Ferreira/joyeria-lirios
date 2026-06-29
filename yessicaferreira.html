@@ -12,6 +12,7 @@
     <style>
         body {
             background-color: #F5F0E6;
+            font-family: "Segoe UI", Arial, sans-serif;
         }
 
         html {
@@ -22,9 +23,15 @@
             background-color: #1C1C1C !important;
         }
 
-        .navbar-brand {
+        .logo-jl {
             color: #C9A24B !important;
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 22px;
             font-weight: bold;
+            letter-spacing: 2px;
+            border: 1px solid #C9A24B;
+            padding: 5px 10px;
+            border-radius: 50%;
         }
 
         .nav-link {
@@ -48,26 +55,31 @@
             color: white;
         }
 
+        h1, h2, h5 {
+            font-family: Georgia, "Times New Roman", serif;
+            font-weight: bold;
+        }
+
         h1, h2 {
             color: #1C1C1C;
-            font-weight: bold;
         }
 
         .hero {
             background-color: #1C1C1C;
             color: white;
-            padding: 80px 20px;
+            padding: 70px 20px;
         }
 
         .hero h1 {
             color: #C9A24B;
+            letter-spacing: 1px;
         }
 
         .hero p {
             color: #F5F0E6;
         }
 
-        /* Carrusel más pequeño, adaptable y sin bordes negros */
+        /* Carrusel adaptable y sin bordes negros */
         #carouselJoyeria {
             max-width: 620px;
             margin: auto;
@@ -87,7 +99,6 @@
             display: block;
         }
 
-        /* En celulares ocupa casi todo el ancho */
         @media (max-width: 576px) {
             #carouselJoyeria {
                 max-width: 95%;
@@ -113,6 +124,14 @@
             background-color: #1C1C1C;
         }
 
+        footer h5 {
+            color: #C9A24B;
+        }
+
+        footer p {
+            color: #F5F0E6;
+        }
+
         footer span {
             color: #C9A24B;
             font-weight: bold;
@@ -129,10 +148,10 @@
 
         <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#inicio">Joyería Lirios</a>
+                <a class="navbar-brand logo-jl" href="#inicio">JL</a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -163,7 +182,7 @@
         <!-- Contenido de bienvenida -->
         <section class="hero text-center">
             <div class="container">
-                <h1 class="display-5 fw-bold">Joyería Lirios</h1>
+                <h1 class="display-5 fw-bold">✦ Joyería Lirios ✦</h1>
                 <p class="lead">Joyería elegante para resaltar tu belleza en cada ocasión.</p>
                 <a href="#producto" class="btn btn-primary btn-lg">Ver productos</a>
             </div>
@@ -285,7 +304,7 @@
                     <div class="mb-3">
                         <label for="correo" class="form-label">Dirección de correo electrónico</label>
                         <input type="email" class="form-control" id="correo" placeholder="ejemplo@gmail.com">
-                        <div id="emailhelp" class="form-text">Nunca compartiremos tu correo con nadie más.</div>
+                        <div id="emailHelp" class="form-text">Nunca compartiremos tu correo con nadie más.</div>
                     </div>
 
                     <div class="mb-3">
@@ -306,10 +325,9 @@
     <!-- ============================================= -->
     <footer class="text-light py-4 mt-5">
         <div class="container text-center">
-            <h5>Joyería Lirios</h5>
+            <h5>✦ Joyería Lirios ✦</h5>
             <p>Joyería elegante, moderna y delicada.</p>
-            <p class="mb-1">
-                Instagram: @joyeria_lirios</p>
+            <p class="mb-1">Instagram: @joyeria_lirios</p>
             <p class="mb-0">Sitio desarrollado por: <span>Yessica Ferreira</span></p>
         </div>
     </footer>
