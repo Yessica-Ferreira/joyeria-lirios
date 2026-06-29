@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyería Lirios</title>
+
+    <!-- CSS de Bootstrap local -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Estilos propios -->
+    <style>
+        body {
+            background-color: #F5F0E6;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .navbar {
+            background-color: #1C1C1C !important;
+        }
+
+        .navbar-brand {
+            color: #C9A24B !important;
+            font-weight: bold;
+        }
+
+        .nav-link {
+            color: white !important;
+        }
+
+        .nav-link:hover {
+            color: #C9A24B !important;
+        }
+
+        .btn-primary {
+            background-color: #C9A24B;
+            border-color: #C9A24B;
+            color: #1C1C1C;
+            font-weight: bold;
+        }
+
+        .btn-primary:hover {
+            background-color: #b28e3f;
+            border-color: #b28e3f;
+            color: white;
+        }
+
+        h1, h2 {
+            color: #1C1C1C;
+            font-weight: bold;
+        }
+
+        .hero {
+            background-color: #1C1C1C;
+            color: white;
+            padding: 80px 20px;
+        }
+
+        .hero h1 {
+            color: #C9A24B;
+        }
+
+        .hero p {
+            color: #F5F0E6;
+        }
+
+        /* Carrusel más pequeño, adaptable y sin bordes negros */
+        #carouselJoyeria {
+            max-width: 620px;
+            margin: auto;
+        }
+
+        #carouselJoyeria .carousel-inner {
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: transparent;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+        }
+
+        #carouselJoyeria .carousel-item img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            display: block;
+        }
+
+        /* En celulares ocupa casi todo el ancho */
+        @media (max-width: 576px) {
+            #carouselJoyeria {
+                max-width: 95%;
+            }
+        }
+
+        .card {
+            border: none;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        .card-img-top {
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .card-title {
+            color: #1C1C1C;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #1C1C1C;
+        }
+
+        footer span {
+            color: #C9A24B;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ============================================= -->
+    <!-- SECCIÓN 1: INICIO + MENÚ DE NAVEGACIÓN -->
+    <!-- ============================================= -->
+    <header id="inicio">
+
+        <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#inicio">Joyería Lirios</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#inicio">Inicio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#galeria">Galería</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#producto">Productos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contactos</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Contenido de bienvenida -->
+        <section class="hero text-center">
+            <div class="container">
+                <h1 class="display-5 fw-bold">Joyería Lirios</h1>
+                <p class="lead">Joyería elegante para resaltar tu belleza en cada ocasión.</p>
+                <a href="#producto" class="btn btn-primary btn-lg">Ver productos</a>
+            </div>
+        </section>
+
+    </header>
+
+
+    <!-- ============================================= -->
+    <!-- SECCIÓN 2: GALERÍA CON CAROUSEL -->
+    <!-- ============================================= -->
+    <section id="galeria" class="container pt-4 pb-3">
+        <h2 class="text-center mb-4">Galería</h2>
+
+        <div id="carouselJoyeria" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselJoyeria" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Imagen 1"></button>
+                <button type="button" data-bs-target="#carouselJoyeria" data-bs-slide-to="1" aria-label="Imagen 2"></button>
+                <button type="button" data-bs-target="#carouselJoyeria" data-bs-slide-to="2" aria-label="Imagen 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="img/joya1.jpg" class="d-block w-100" alt="Collar elegante">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="img/anillo.jpg" class="d-block w-100" alt="Anillo elegante">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="img/pulsera.jpg" class="d-block w-100" alt="Pulsera brillante">
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselJoyeria" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselJoyeria" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+
+        </div>
+    </section>
+
+
+    <!-- ============================================= -->
+    <!-- SECCIÓN 3: PRODUCTOS CON CARDS -->
+    <!-- ============================================= -->
+    <section id="producto" class="container pt-4 pb-5">
+        <h2 class="text-center mb-4">Nuestros productos</h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="img/collar.jpg" class="card-img-top" alt="Collar dorado">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Collar Dorado</h5>
+                        <p class="card-text">Collar delicado y elegante, ideal para eventos especiales o uso diario.</p>
+                        <p class="fw-bold">Precio: Gs. 120.000</p>
+                        <a href="#contacto" class="btn btn-primary">Consultar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="img/anillo.jpg" class="card-img-top" alt="Anillo elegante">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Anillo Elegante</h5>
+                        <p class="card-text">Anillo moderno con acabado brillante, perfecto para regalar.</p>
+                        <p class="fw-bold">Precio: Gs. 95.000</p>
+                        <a href="#contacto" class="btn btn-primary">Consultar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="img/pulsera.jpg" class="card-img-top" alt="Pulsera fina">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Pulsera Fina</h5>
+                        <p class="card-text">Pulsera cómoda, delicada y combinable con diferentes estilos.</p>
+                        <p class="fw-bold">Precio: Gs. 80.000</p>
+                        <a href="#contacto" class="btn btn-primary">Consultar</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ============================================= -->
+    <!-- SECCIÓN 4: FORMULARIO DE CONTACTO -->
+    <!-- ============================================= -->
+    <section id="contacto" class="container py-5">
+        <h2 class="text-center mb-4">Contáctanos</h2>
+
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+
+                <form>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Escribí tu nombre">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">Dirección de correo electrónico</label>
+                        <input type="email" class="form-control" id="correo" placeholder="ejemplo@gmail.com">
+                        <div id="emailhelp" class="form-text">Nunca compartiremos tu correo con nadie más.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribí tu consulta"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================= -->
+    <!-- SECCIÓN 5: PIE DE PÁGINA -->
+    <!-- ============================================= -->
+    <footer class="text-light py-4 mt-5">
+        <div class="container text-center">
+            <h5>Joyería Lirios</h5>
+            <p>Joyería elegante, moderna y delicada.</p>
+            <p class="mb-1">
+                Instagram: @joyeria_lirios</p>
+            <p class="mb-0">Sitio desarrollado por: <span>Yessica Ferreira</span></p>
+        </div>
+    </footer>
+
+
+    <!-- JS de Bootstrap local -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
